@@ -6,8 +6,8 @@ namespace InventoryAPI.Models
     {
         public int Id { get; set; }
         [Required]
-        public string ItemName { get; set; }
-        public double ItemPrice { get; set; }
-        public string ItemLocation { get; set; }
+        public string? ItemName { get; set; }
+        public int? ItemPrice { get; set; }
+        public string? ItemLocation { get; set; }
     }
 }
