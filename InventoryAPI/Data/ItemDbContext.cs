@@ -8,6 +8,6 @@ namespace InventoryAPI.Data
         public DbSet<Item> Items { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite(@"Data Source=C:\Temp\items.db");
+            => options.UseSqlite(@"Data Source=..\InventoryAPI\Data\inventory.db");
     }
 }
