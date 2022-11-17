@@ -89,6 +89,7 @@ For Example:
 
  * Click "Execute" to update the item
 
+NOTE: Be sure the ID in the ID field matches the ID provided in the update data. If the IDs don't match or are not in the database, a 404 - "Not Found" message will be returned.
 
 ## DELETE record
 In Swagger - 
