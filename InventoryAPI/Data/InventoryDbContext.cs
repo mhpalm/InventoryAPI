@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InventoryAPI.Data
 {
-    public class ItemDbContext : DbContext
+    public class InventoryDbContext : DbContext
     {
         public DbSet<Item> Items { get; set; }
 

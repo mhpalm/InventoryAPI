@@ -7,7 +7,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<ItemDbContext>();
+builder.Services.AddDbContext<InventoryDbContext>();
 
 var app = builder.Build();
 

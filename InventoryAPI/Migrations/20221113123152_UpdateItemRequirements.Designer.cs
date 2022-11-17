@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace InventoryAPI.Migrations
 {
-    [DbContext(typeof(ItemDbContext))]
+    [DbContext(typeof(InventoryDbContext))]
     [Migration("20221113123152_UpdateItemRequirements")]
     partial class UpdateItemRequirements
     {

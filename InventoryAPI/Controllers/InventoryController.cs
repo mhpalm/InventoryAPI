@@ -1,6 +1,5 @@
 ﻿using InventoryAPI.Data;
 using InventoryAPI.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,12 +8,12 @@ namespace InventoryAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    //Open/Closed Principle - ItemController inherits from ControllerBase
-    //Liskov Substitution Principle - ItemController extends the functionality of its parent class ControllerBase without affecting its behavior
-    public class ItemController : ControllerBase
+    //Open/Closed Principle - InventoryController inherits from ControllerBase
+    //Liskov Substitution Principle - InventoryController extends the functionality of its parent class ControllerBase without affecting its behavior
+    public class InventoryController : ControllerBase
     {
-        private readonly ItemDbContext _context;
-        public ItemController(ItemDbContext context) => _context = context;
+        private readonly InventoryDbContext _context;
+        public InventoryController(InventoryDbContext context) => _context = context;
 
         //Single Responsibility Principle - the Get action only has one reason to change - in the event that a request is made to pull all list items.
         [HttpGet]
