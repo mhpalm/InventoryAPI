@@ -13,7 +13,7 @@ Make sure you have .NET 6.0 installed
 # INSTALLATION:
 * Click the green "Code" button and select Download ZIP.
 * Extract the zip file contents to the desired folder.
-* Open the folder in which the zip file was extracted.
+* In your desired Terminal program, open the folder in which the zip file was extracted.
 * Navigate to the InventoryAPI folder (\InventoryAPI-master\InventoryAPI-master\InventoryAPI)
 * Type "dotnet build" and press enter
 * Type "dotnet run" and press enter
