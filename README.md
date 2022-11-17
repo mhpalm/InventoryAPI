@@ -17,9 +17,10 @@ Make sure you have .NET 6.0 installed
 * Navigate to the InventoryAPI folder (\InventoryAPI-master\InventoryAPI-master\InventoryAPI)
 * Type "dotnet build" and press enter
 * Type "dotnet run" and press enter
-* You should receive a message that states:
-      info: Microsoft.Hosting.Lifetime[14]
+* You should receive a message that states:  
+      info: Microsoft.Hosting.Lifetime[14]  
       Now listening on: https://localhost:7066
+  
 * Take note of the first address (note: your local address may vary due to your specific system setup) and add "/Swagger/" to the end and press enter (e.g. https://localhost:7066/Swagger/)
 
 On the Swagger page, you can view all the records in the inventory by selecting "Get", add items by selecting "Post", update an item by selecting "Put", and delete an item by selecting "Delete". 
@@ -34,18 +35,18 @@ In Swagger -
  * Click "Post" then "Try it out".
  * Update the following fields to add a record to the database:
 
-{
-  "itemName": "NAME",
-  "itemQuantity": 0,
-  "itemType": "TYPE"
-}
+{  
+  "itemName": "NAME",  
+  "itemQuantity": 0,  
+  "itemType": "TYPE"  
+}  
 
-For Example:
-{
-  "itemName": "EXAMPLE ITEM",
-  "itemQuantity": 5,
-  "itemType": "EXAMPLE ITEM TYPE"
-}
+For Example:  
+{  
+  "itemName": "EXAMPLE ITEM",  
+  "itemQuantity": 5,  
+  "itemType": "EXAMPLE ITEM TYPE"  
+}  
 
  * Click "Execute" to create the item
 
@@ -71,21 +72,22 @@ In Swagger -
 In Swagger - 
  * Click "Put" then "Try it out".
  * In the ID field, enter the ID of the item you would like to update.
- * Update the following fields with the information of the record in the database you would like to update:
-{
-  "id": 0,
-  "itemName": "string",
-  "itemQuantity": 0,
-  "itemType": "string"
-}
+ * Update the following fields with the information of the record in the database you would like to update:  
 
-For Example:
-{
-  "id": 1,
-  "itemName": "EXAMPLE ITEM UPDATED",
-  "itemQuantity": 4,
-  "itemType": "EXAMPLE ITEM TYPE"
-}
+{  
+  "id": 0,  
+  "itemName": "string",  
+  "itemQuantity": 0,  
+  "itemType": "string"  
+}  
+
+For Example:  
+{  
+  "id": 1,  
+  "itemName": "EXAMPLE ITEM UPDATED",  
+  "itemQuantity": 4,  
+  "itemType": "EXAMPLE ITEM TYPE"  
+}  
 
  * Click "Execute" to update the item
 
