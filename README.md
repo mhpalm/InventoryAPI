@@ -1,12 +1,11 @@
 # InventoryAPI
 
-This is an API that tracks items within an inventory. The current information that is tracked is the item name, quantity, and type. Each item is assigned a unique id.
+This is an API that allows the user to track items within an inventory. The current information that is tracked is the item name, quantity, and type. Each item is assigned a unique id. All the data is returned as a JSON in the standard API format.
 
-FEATURES:
+## FEATURES:
 * Make your application an API
 * Make your application a CRUD API
 * Add comments to your code explaining how you are using at least 2 of the solid principles
-
 
 NOTE:
 Make sure you have .NET 6.0 installed
@@ -27,7 +26,9 @@ On the Swagger page, you can view all the records in the inventory by selecting 
 
 While Swagger is the method used in this example, you may also use other API programs, such as Postman, to execute these requests as well.
 
-# CREATE record:
+# USE:
+
+## CREATE record:
 
 In Swagger - 
  * Click "Post" then "Try it out".
@@ -48,7 +49,7 @@ For Example:
 
  * Click "Execute" to create the item
 
-# READ ALL records:
+## READ ALL records:
 In browser - 
  * Navigate to your local address /api/Inventory (e.g. https://localhost:7066/api/Inventory/) to pull a Get request of all records returned in JSON format.
 
@@ -56,7 +57,7 @@ In Swagger -
  * Click the first "Get" then "Try it out" and then "Execute".
  * The information in the database will be returned in the "Response body" box under the Get request
 
-# READ ONE record:
+## READ ONE record:
 In browser - 
  * Navigate to your local address /api/Inventory/ID (e.g. https://localhost:7066/api/Inventory/ID) to pull a Get request of the selected record with that ID returned in JSON format. If no ID is found, the system will return a 404 - "Not Found" message.
 
@@ -66,7 +67,7 @@ In Swagger -
  * If no ID is found, the system will return a 404 - "Not Found" message.
 
 
-# UPDATE record
+## UPDATE record
 In Swagger - 
  * Click "Put" then "Try it out".
  * In the ID field, enter the ID of the item you would like to update.
@@ -89,7 +90,7 @@ For Example:
  * Click "Execute" to update the item
 
 
-# DELETE record
+## DELETE record
 In Swagger - 
  * Click "Delete" then "Try it out".
  * In the ID field, enter the ID of the item you would like to delete.
